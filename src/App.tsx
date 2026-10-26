@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import PriceInquiryCTA from "./components/PriceInquiryCTA"
 
 // Types
 export interface BrickProduct {
@@ -656,10 +657,26 @@ export default function App() {
             >
               استانداردهای آزمایشگاهی
             </button>
+
+            <button
+              onClick={() => navigateToSection("price-inquiry")}
+              className="text-[#0d9488] hover:text-[#09635b] font-bold transition-colors py-2 flex items-center gap-1.5 cursor-pointer"
+            >
+              <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
+              <span>استعلام قیمت و کارشناسان</span>
+            </button>
           </nav>
 
           {/* Action Header Button */}
           <div className="flex items-center gap-2.5">
+            <button
+              onClick={() => navigateToSection("price-inquiry")}
+              className="border border-[#0d9488] text-[#0d9488] hover:bg-[#0d9488] hover:text-white px-3.5 py-2 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10b981]" />
+              <span>استعلام قیمت</span>
+            </button>
+
             <button
               onClick={() => navigateToSection("sample-box")}
               className="bg-[#9e3d24] hover:bg-[#782a15] text-white px-4 py-2 rounded-full text-xs font-bold transition-all shadow-xs flex items-center gap-2 cursor-pointer"
@@ -704,19 +721,26 @@ export default function App() {
 
                   <div className="flex flex-wrap items-center gap-4 mb-8">
                     <a
-                      href="#categories-directory"
-                      className="bg-[#9e3d24] hover:bg-[#782a15] text-white px-6 py-3 text-xs font-bold transition-all shadow-md flex items-center gap-2"
+                      href="#price-inquiry"
+                      className="bg-[#0d9488] hover:bg-[#0f766e] text-white px-6 py-3 text-xs font-bold transition-all shadow-md flex items-center gap-2 cursor-pointer"
                     >
-                      مشاهده دسته‌بندی‌های آجر
+                      <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
+                      <span>استعلام فوری قیمت کارخانه</span>
                       <svg className="w-4 h-4 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>
                     </a>
                     <a
-                      href="#atelier"
-                      className="bg-transparent border border-[#0d9488] text-[#0d9488] hover:bg-[#0d9488] hover:text-white px-6 py-3 text-xs font-bold transition-all flex items-center gap-2"
+                      href="#categories-directory"
+                      className="bg-[#9e3d24] hover:bg-[#782a15] text-white px-6 py-3 text-xs font-bold transition-all shadow-md flex items-center gap-2 cursor-pointer"
                     >
-                      ورود به نمایشگاه و آتلیه آنلاین
+                      مشاهده دسته‌بندی‌های آجر
+                    </a>
+                    <a
+                      href="#atelier"
+                      className="bg-transparent border border-[#0d9488] text-[#0d9488] hover:bg-[#0d9488] hover:text-white px-6 py-3 text-xs font-bold transition-all flex items-center gap-2 cursor-pointer"
+                    >
+                      ورود به آتلیه آنلاین
                       <span className="w-2 h-2 rounded-full bg-[#0d9488]" />
                     </a>
                   </div>
@@ -856,6 +880,11 @@ export default function App() {
               ))}
             </div>
           </section>
+
+          {/* ========================================================================= */}
+          {/* CALL TO ACTION: DIRECT FACTORY PRICE INQUIRY & EXPERT OPERATORS          */}
+          {/* ========================================================================= */}
+          <PriceInquiryCTA />
 
           {/* ========================================================================= */}
           {/* SECTION 2: THE ONLINE MATERIAL SHOWROOM & MORTAR ATELIER (نمایشگاه آنلاین) */}

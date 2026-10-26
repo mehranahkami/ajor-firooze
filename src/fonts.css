@@ -1,0 +1,330 @@
+/* ========================================================
+   IRANIAN ARCHITECTURAL TYPOGRAPHY SYSTEM
+   کارخانه آجر فیروزه نیشابور - سیستم تایپوگرافی اختصاصی
+   ======================================================== */
+
+/* --- 1. DANA (هندسی، مدرن، معماری معاصر) --- */
+@font-face {
+  font-family: 'Dana';
+  src: url('./fonts/dana/woff2/dana-thin.woff2') format('woff2'),
+       url('./fonts/dana/woff/dana-thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana';
+  src: url('./fonts/dana/woff2/dana-extralight.woff2') format('woff2'),
+       url('./fonts/dana/woff/dana-extralight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana';
+  src: url('./fonts/dana/woff2/dana-light.woff2') format('woff2'),
+       url('./fonts/dana/woff/dana-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana';
+  src: url('./fonts/dana/woff2/dana-regular.woff2') format('woff2'),
+       url('./fonts/dana/woff/dana-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana';
+  src: url('./fonts/dana/woff2/dana-medium.woff2') format('woff2'),
+       url('./fonts/dana/woff/dana-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana';
+  src: url('./fonts/dana/woff2/dana-demibold.woff2') format('woff2'),
+       url('./fonts/dana/woff/dana-demibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana';
+  src: url('./fonts/dana/woff2/dana-bold.woff2') format('woff2'),
+       url('./fonts/dana/woff/dana-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana';
+  src: url('./fonts/dana/woff2/dana-extrabold.woff2') format('woff2'),
+       url('./fonts/dana/woff/dana-extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana';
+  src: url('./fonts/dana/woff2/dana-black.woff2') format('woff2'),
+       url('./fonts/dana/woff/dana-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- 2. IRANSansX (فونت رسمی شرکتی با اعداد فارسی FaNum) --- */
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('./fonts/IRANSansX-new/woff2/IRANSansXFaNum-Thin.woff2') format('woff2'),
+       url('./fonts/IRANSansX-new/woff/IRANSansXFaNum-thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('./fonts/IRANSansX-new/woff2/IRANSansXFaNum-UltraLight.woff2') format('woff2'),
+       url('./fonts/IRANSansX-new/woff/IRANSansXFaNum-ultraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('./fonts/IRANSansX-new/woff2/IRANSansXFaNum-light.woff2') format('woff2'),
+       url('./fonts/IRANSansX-new/woff/IRANSansXFaNum-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('./fonts/IRANSansX-new/woff2/IRANSansXFaNum-regular.woff2') format('woff2'),
+       url('./fonts/IRANSansX-new/woff/IRANSansXFaNum-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('./fonts/IRANSansX-new/woff2/IRANSansXFaNum-medium.woff2') format('woff2'),
+       url('./fonts/IRANSansX-new/woff/IRANSansXFaNum-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('./fonts/IRANSansX-new/woff2/IRANSansXFaNum-demiBold.woff2') format('woff2'),
+       url('./fonts/IRANSansX-new/woff/IRANSansXFaNum-demibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('./fonts/IRANSansX-new/woff2/IRANSansXFaNum-bold.woff2') format('woff2'),
+       url('./fonts/IRANSansX-new/woff/IRANSansXFaNum-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('./fonts/IRANSansX-new/woff2/IRANSansXFaNum-extrabold.woff2') format('woff2'),
+       url('./fonts/IRANSansX-new/woff/IRANSansXFaNum-extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('./fonts/IRANSansX-new/woff2/IRANSansXFaNum-black.woff2') format('woff2'),
+       url('./fonts/IRANSansX-new/woff/IRANSansXFaNum-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- 3. YEKAN BAKH (یکان‌بخ لوکس با اعداد فارسی) --- */
+@font-face {
+  font-family: 'YekanBakh';
+  src: url('./fonts/yekanbakhfa/woff2/YekanBakhFaNum-Thin.woff2') format('woff2'),
+       url('./fonts/yekanbakhfa/woff/YekanBakhFaNum-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YekanBakh';
+  src: url('./fonts/yekanbakhfa/woff2/YekanBakhFaNum-Light.woff2') format('woff2'),
+       url('./fonts/yekanbakhfa/woff/YekanBakhFaNum-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YekanBakh';
+  src: url('./fonts/yekanbakhfa/woff2/YekanBakhFaNum-Regular.woff2') format('woff2'),
+       url('./fonts/yekanbakhfa/woff/YekanBakhFaNum-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YekanBakh';
+  src: url('./fonts/yekanbakhfa/woff2/YekanBakhFaNum-SemiBold.woff2') format('woff2'),
+       url('./fonts/yekanbakhfa/woff/YekanBakhFaNum-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YekanBakh';
+  src: url('./fonts/yekanbakhfa/woff2/YekanBakhFaNum-Bold.woff2') format('woff2'),
+       url('./fonts/yekanbakhfa/woff/YekanBakhFaNum-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YekanBakh';
+  src: url('./fonts/yekanbakhfa/woff2/YekanBakhFaNum-ExtraBold.woff2') format('woff2'),
+       url('./fonts/yekanbakhfa/woff/YekanBakhFaNum-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YekanBakh';
+  src: url('./fonts/yekanbakhfa/woff2/YekanBakhFaNum-Black.woff2') format('woff2'),
+       url('./fonts/yekanbakhfa/woff/YekanBakhFaNum-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- 4. PINAR (پینار با ساختار معاصر و رندرینگ شیک) --- */
+@font-face {
+  font-family: 'Pinar';
+  src: url('./fonts/pinar/Pinar-VF.woff2') format('woff2-variations'),
+       url('./fonts/pinar/Pinar-DS2-FD-Regular.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinar';
+  src: url('./fonts/pinar/Pinar-DS2-FD-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pinar';
+  src: url('./fonts/pinar/Pinar-DS1-FD-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- 5. ANJOMAN (انجمن - اصیل، موقر و معماری تاریخی) --- */
+@font-face {
+  font-family: 'Anjoman';
+  src: url('./fonts/Anjoman/woff2/Anjoman-FaNum-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Anjoman';
+  src: url('./fonts/Anjoman/woff2/Anjoman-FaNum-Regular.woff2') format('woff2'),
+       url('./fonts/Anjoman/woff/Anjoman-FaNum-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Anjoman';
+  src: url('./fonts/Anjoman/woff2/Anjoman-FaNum-Bold.woff2') format('woff2'),
+       url('./fonts/Anjoman/woff/Anjoman-FaNum-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- 6. KALAMEH (کلمه - تیتراژ فوق‌العاده بولد و با ابهت) --- */
+@font-face {
+  font-family: 'Kalameh';
+  src: url('./fonts/KalamehWeb/KalamehWeb_Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- 7. PEYDA (پیدا - نیمه‌بولد معاصر و صمیمی) --- */
+@font-face {
+  font-family: 'Peyda';
+  src: url('./fonts/peyda/PeydaWeb-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- 8. AVINY (آوینی - خوشنویسی و هنر سنتی ایرانی) --- */
+@font-face {
+  font-family: 'Aviny';
+  src: url('./fonts/aviny/aviny.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- 9. MEHRAVAR (مهراور - خط شکسته و نشان‌های سنتی) --- */
+@font-face {
+  font-family: 'Mehravar';
+  src: url('./fonts/mehravar/mahboubeh_mehravar.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- 10. IRANSharp (ایران شارپ) --- */
+@font-face {
+  font-family: 'IRANSharp';
+  src: url('./fonts/IRANSharp/iransharp_regular_web.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

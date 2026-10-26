@@ -1,0 +1,214 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+:root {
+  /* Brand Luxury Palette: Persian Turquoise & Red Ochre Brick */
+  --ochre-primary: #9e3d24;
+  --ochre-deep: #782a15;
+  --ochre-dark: #501b0d;
+  --ochre-light: #bc5639;
+  --ochre-wash: #fbf3ee;
+  --ochre-border: rgba(158, 61, 36, 0.18);
+
+  --turquoise-primary: #0d9488;
+  --turquoise-deep: #0f766e;
+  --turquoise-dark: #042f2e;
+  --turquoise-bright: #14b8a6;
+  --turquoise-wash: #f0fdfa;
+  --turquoise-border: rgba(13, 148, 136, 0.22);
+
+  --stone-paper: #faf8f5;
+  --stone-card: #ffffff;
+  --stone-sand: #f3ede2;
+  --stone-border: #e8e2d5;
+  
+  --ink-primary: #151d1b;
+  --ink-secondary: #4a5754;
+  --ink-muted: #788784;
+
+  --bronze-accent: #b89868;
+
+  /* Typography Font Families (Fixed Official Typography) */
+  --font-primary: 'Dana', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Dana', system-ui, -apple-system, sans-serif;
+  --font-display: 'Kalameh', 'Dana', sans-serif;
+  --font-calligraphy: 'Aviny', cursive, sans-serif;
+  --font-decorative: 'Mehravar', cursive, sans-serif;
+  --font-editorial: 'Anjoman', 'Dana', serif, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    outline-color: var(--turquoise-primary);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "ss01", "ss02", "cv01";
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--stone-paper);
+    color: var(--ink-primary);
+    font-family: var(--font-primary);
+    line-height: 1.75;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+  }
+
+  button, input, select, textarea {
+    font-family: inherit;
+  }
+}
+
+/* Explicit Font Utility Classes */
+.font-dana {
+  font-family: 'Dana', system-ui, sans-serif !important;
+}
+
+.font-iransans {
+  font-family: 'IRANSansX', system-ui, sans-serif !important;
+}
+
+.font-yekan {
+  font-family: 'YekanBakh', system-ui, sans-serif !important;
+}
+
+.font-pinar {
+  font-family: 'Pinar', system-ui, sans-serif !important;
+}
+
+.font-anjoman {
+  font-family: 'Anjoman', 'Dana', serif !important;
+}
+
+.font-kalameh {
+  font-family: 'Kalameh', 'Dana', sans-serif !important;
+}
+
+.font-peyda {
+  font-family: 'Peyda', system-ui, sans-serif !important;
+}
+
+.font-aviny {
+  font-family: 'Aviny', cursive !important;
+}
+
+.font-mehravar {
+  font-family: 'Mehravar', cursive !important;
+}
+
+.font-sharp {
+  font-family: 'IRANSharp', sans-serif !important;
+}
+
+/* Persian traditional calligraphic stamp badge */
+.calligraphic-seal {
+  font-family: 'Aviny', cursive;
+  font-size: 1.15rem;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.heading-display {
+  font-family: 'Kalameh', var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+.editorial-subhead {
+  font-family: 'Anjoman', var(--font-primary);
+  line-height: 1.8;
+}
+
+/* Subtle architectural grid pattern background */
+.architectural-grid {
+  background-image: 
+    linear-gradient(to right, rgba(22, 29, 27, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(22, 29, 27, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Luxury Persian brick & turquoise duotone accents */
+.badge-ochre {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--ochre-wash);
+  color: var(--ochre-primary);
+  border: 1px solid var(--ochre-border);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.badge-turquoise {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--turquoise-wash);
+  color: var(--turquoise-deep);
+  border: 1px solid var(--turquoise-border);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Custom hairline borders */
+.hairline-border {
+  border: 1px solid var(--stone-border);
+}
+
+.hairline-b {
+  border-bottom: 1px solid var(--stone-border);
+}
+
+.hairline-t {
+  border-top: 1px solid var(--stone-border);
+}
+
+/* Elegant custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+::-webkit-scrollbar-thumb {
+  background: #b5a999;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ochre-primary);
+}
+
+/* Interactive wall simulation styles */
+.simulator-wall {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Glassmorphic luxury cards */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-panel-dark {
+  background: rgba(4, 47, 46, 0.92);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}

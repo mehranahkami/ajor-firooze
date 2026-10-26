@@ -41,3 +41,7 @@ Tailwind emits utility classes in `@layer utilities`, and CSS outside any cascad
 - Use double quotes for strings containing apostrophes (`"We're here to help"`), or escape them in single-quoted strings. An unescaped apostrophe in a single-quoted string breaks the build.
 - Ensure JSX tags are closed and braces are balanced.
 - Export components as default exports.
+
+## Git Workflow
+- All changes made by the AI agent should be committed to Git with clear, concise commit messages.
+- Staging and committing changes frequently keeps the history clean and accelerates code analysis.
